@@ -37,7 +37,10 @@ mongoose.connect('mongodb+srv://aayush:root@cluster0.98y3e5b.mongodb.net/Quantum
 }).catch((err) => {
     console.log(err);
 })
-
+// Get
+app.get("/",(req,res)=>{
+    res.json("Hello");
+}
 // Register API
 app.post('/register', async (req, res) => {
     try {
