@@ -28,7 +28,8 @@ const secretKey = generateRandomString(32);
 
 
 // Connecting database
-mongoose.connect('mongodb://localhost:27017/Quantum', {
+
+mongoose.connect('mongodb+srv://aayush:root@cluster0.98y3e5b.mongodb.net/Quantum', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then((data) => {
